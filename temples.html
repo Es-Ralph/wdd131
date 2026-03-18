@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- REQUIRED META -->
+  <meta name="description" content="Explore a beautiful collection of temples from around the world in this temple album.">
+  <meta name="author" content="Ralph">
+
   <title>Temple Album</title>
 
-  <!-- Google Font -->
+  <!-- Google Fonts (CORRECT METHOD) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <!-- CSS (mobile first) -->
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/temples.css">
   <link rel="stylesheet" href="styles/temples-large.css">
 
@@ -21,7 +28,7 @@
 <header>
   <h2>Temple Album</h2>
 
-  <button id="menu">☰</button>
+  <button id="menu" aria-label="Menu">☰</button>
 
   <nav id="nav">
     <a href="#">Home</a>
@@ -36,51 +43,52 @@
   <h1>Explore Temples</h1>
 
   <div class="gallery">
-    <!-- Repeat this 9 times -->
+
     <figure>
-      <img src="images/temple-small.webp" alt="Temple">
-      <figcaption>Temple 1</figcaption>
+      <img src="images/temple-small.webp" alt="Small temple building with simple design">
+      <figcaption>Small Temple</figcaption>
     </figure>
 
     <figure>
-      <img src="images/temple-large.jpeg" alt="Temple">
-      <figcaption>Temple 2</figcaption>
+      <img src="images/abidjan-ivory-coast.jpeg" alt="Large temple with detailed architecture">
+      <figcaption>Large Temple</figcaption>
     </figure>
 
     <figure>
-      <img src="images/aba-nigeria-temple.jpeg" alt="Temple">
-      <figcaption>Temple 3</figcaption>
+      <img src="images/aba-nigeria-temple.jpeg" alt="Aba Nigeria Temple exterior view">
+      <figcaption>Aba Nigeria Temple</figcaption>
     </figure>
 
     <figure>
-      <img src="images/abidjan-ivory-coast.jpeg" alt="Temple">
-      <figcaption>Temple 4</figcaption>
+      <img src="images/abidjan-ivory-coast.jpeg" alt="Abidjan Ivory Coast Temple surrounded by greenery">
+      <figcaption>Abidjan Ivory Coast Temple</figcaption>
     </figure>
 
     <figure>
-      <img src="images/salt-lake-temple.jpg" alt="Temple">
-      <figcaption>Temple 5</figcaption>
+      <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple historic landmark">
+      <figcaption>Salt Lake Temple</figcaption>
     </figure>
 
     <figure>
-      <img src="images/temple-small.webp" alt="Temple">
-      <figcaption>Temple 6</figcaption>
+      <img src="images/temple-small.webp" alt="Small temple with peaceful surroundings">
+      <figcaption>Peaceful Temple</figcaption>
     </figure>
 
     <figure>
-      <img src="images/temple-large.jpeg" alt="Temple">
-      <figcaption>Temple 7</figcaption>
+      <img src="images/temple-small.webp" alt="Large temple during daylight">
+      <figcaption>Modern Temple</figcaption>
     </figure>
 
     <figure>
-      <img src="images/aba-nigeria-temple.jpeg" alt="Temple">
-      <figcaption>Temple 8</figcaption>
+      <img src="images/aba-nigeria-temple.jpeg" alt="Aba Nigeria Temple entrance view">
+      <figcaption>Temple Entrance</figcaption>
     </figure>
 
     <figure>
-      <img src="images/temple-small.webp" alt="Temple">
-      <figcaption>Temple 9</figcaption>
+      <img src="images/temple-small.webp" alt="Temple with calm environment">
+      <figcaption>Quiet Temple</figcaption>
     </figure>
+
   </div>
 </main>
 

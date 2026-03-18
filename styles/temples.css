@@ -15,6 +15,7 @@ header {
   background: none;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 /* Nav */
@@ -33,7 +34,6 @@ nav a:hover {
   background: #555;
 }
 
-/* Show menu */
 nav.open {
   display: flex;
 }
@@ -54,6 +54,7 @@ main {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 /* Footer */
