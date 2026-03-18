@@ -1,0 +1,64 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Nav */
+nav {
+  display: none;
+  flex-direction: column;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+/* Show menu */
+nav.open {
+  display: flex;
+}
+
+/* Main */
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+}
