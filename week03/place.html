@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visit Ghana</title>
+
+    <title>Visit Ghana | Discover West Africa</title>
+
+    <meta name="description" content="Discover Ghana, a country rich in culture, history, and natural beauty in West Africa.">
+    <meta name="author" content="Rapheal Akwasi Agyapong">
+
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -19,8 +24,8 @@
     <!-- HERO -->
     <div class="hero">
         <picture>
-            <source srcset="images/ghana-large.webp" media="(min-width: 1000px)">
-            <source srcset="images/ghana-medium.webp" media="(min-width: 750px)">
+            <source srcset="images/ghana-large.webp" media="(min-width: 1000px)" type="image/webp">
+            <source srcset="images/ghana-medium.webp" media="(min-width: 600px)" type="image/webp">
             <img src="images/ghana-small.webp" alt="Beautiful view of Ghana">
         </picture>
     </div>
@@ -54,7 +59,10 @@
 
     <!-- WEATHER -->
     <section class="weather">
-        <h2>Weather</h2>
+        <h2>
+            Weather 
+            <img src="images/weather.webp" alt="Weather icon" class="weather-icon">
+        </h2>
         <p>Temperature: <span id="temp">28</span>°C</p>
         <p>Wind Speed: <span id="wind">10</span> km/h</p>
         <p>Wind Chill: <span id="chill"></span></p>
@@ -63,8 +71,7 @@
 </main>
 
 <footer>
-    <p>&copy ; <span id="year"></span> Rapheal Akwasi Agyapong | Ghana</p>
-     <p>Last Modified: <span id="modified"></span></p>
+    <p>&copy; Rapheal Akwasi Agyapong <span id="year"></span> | Last Modified: <span id="modified"></span></p>
 </footer>
 
 </body>

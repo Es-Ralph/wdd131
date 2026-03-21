@@ -33,6 +33,8 @@ main {
     display: grid;
     gap: 1rem;
     padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* Hero */
@@ -50,23 +52,29 @@ section {
     border-left: 6px solid var(--green);
 }
 
-/* Add black star accent */
+/* Black star accent */
 section h2::before {
     content: "★ ";
     color: var(--black);
-    font-size: 1.2rem;
 }
 
-/* Weather icon (DESKTOP ONLY) */
+/* Weather SVG icon */
+.weather-icon {
+    width: 24px;
+    vertical-align: middle;
+}
+
+/* Desktop: hide SVG, show emoji */
 @media (min-width: 768px) {
+    .weather-icon {
+        display: none;
+    }
+
     .weather h2::after {
         content: " ⛅";
         color: var(--yellow);
     }
-}
 
-/* Desktop layout */
-@media (min-width: 768px) {
     main {
         grid-template-columns: 2fr 1fr;
     }
