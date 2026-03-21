@@ -1,0 +1,86 @@
+:root {
+    --red: #ce1126;
+    --yellow: #fcd116;
+    --green: #006b3f;
+    --black: #000000;
+    --light: #f5f5f5;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--black);
+}
+
+/* Header */
+header {
+    background: var(--red);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 5px solid var(--yellow);
+}
+
+/* Layout */
+main {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Hero */
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: 6px solid var(--green);
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 6px solid var(--green);
+}
+
+/* Add black star accent */
+section h2::before {
+    content: "★ ";
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+/* Weather icon (DESKTOP ONLY) */
+@media (min-width: 768px) {
+    .weather h2::after {
+        content: " ⛅";
+        color: var(--yellow);
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .hero {
+        grid-column: span 2;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--green);
+    color: white;
+    border-top: 5px solid var(--red);
+}
