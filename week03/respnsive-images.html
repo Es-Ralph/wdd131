@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    
+</head>
+<body>
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/image-large.webp" media="(min-width: 1500px)" type="image/webp">
+                <source srcset="images/image-medium.webp" media="(max-width: 1000px)" type="image/webp">
+                <img src="images/temple-small.webp" alt="A beautiful landscape with mountains and a lake">
+            </picture>
+        </div>
+
+        <section>
+            <h2>Welcome to My Site</h2>
+            <p>This is a simple example of a responsive layout using CSS Grid.</p>
+        </section>
+        <aside class="callout">
+            <h3>Did You Know?</h3>
+            <p>Responsive design ensures your website looks great on all devices.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
