@@ -3,67 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Submit your review for the IoT-based energy monitoring system for SMEs."> 
-  <meta name="author" content="Rapheal Akwasi Agyapong">
   <title>Product Review</title>
-  <link rel="stylesheet" href="styles/form.css">
-</head>
-<body>
+  <meta name="description" content="Submit your product review for our products.">
+  <meta name="author" content="Rapheal Akwasi Agyapong">
 
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
 <header>
   <h1>Product Review Form</h1>
 </header>
 
 <main>
-  <form method="get" action="review.html">
+<form method="get" action="review.html">
 
-    <!-- Product Name -->
-    <label for="product">Product Name *</label>
-    <select id="product" name="product" required>
-      <option value="" disabled selected>Select a Product ...</option>
-    </select>
+  <!-- Product -->
+  <label for="product">Product Name *</label>
+  <select id="product" name="product" required>
+    <option value="" disabled selected>Select a Product ...</option>
+  </select>
 
-    <!-- Rating -->
-    <fieldset>
-      <legend>Overall Rating *</legend>
-      <label><input type="radio" name="rating" value="1" required> ☆</label>
-      <label><input type="radio" name="rating" value="2"> ☆☆</label>
-      <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-      <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-      <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
-    </fieldset>
+  <!-- Rating -->
+  <fieldset>
+    <legend>Overall Rating *</legend>
 
-    <!-- Date -->
-    <label for="date">Date of Installation *</label>
-    <input type="date" id="date" name="date" required>
+    <div class="rating">
+      <input type="radio" id="r1" name="rating" value="1" required>
+      <label for="r1">☆</label>
 
-    <!-- Features -->
-    <fieldset>
-      <legend>Useful Features</legend>
-      <label><input type="checkbox" name="features" value="durable"> Durable</label>
-      <label><input type="checkbox" name="features" value="easy"> Easy to Use</label>
-      <label><input type="checkbox" name="features" value="affordable"> Affordable</label>
-      <label><input type="checkbox" name="features" value="design"> Nice Design</label>
-    </fieldset>
+      <input type="radio" id="r2" name="rating" value="2" required>
+      <label for="r2">☆☆</label>
 
-    <!-- Review -->
-    <label for="review">Written Review</label>
-    <textarea id="review" name="review"></textarea>
+      <input type="radio" id="r3" name="rating" value="3" required>
+      <label for="r3">☆☆☆</label>
 
-    <!-- Username -->
-    <label for="username">Your Name</label>
-    <input type="text" id="username" name="username">
+      <input type="radio" id="r4" name="rating" value="4" required>
+      <label for="r4">☆☆☆☆</label>
 
-    <!-- Submit -->
-    <input type="submit" value="Submit Review">
+      <input type="radio" id="r5" name="rating" value="5" required>
+      <label for="r5">☆☆☆☆☆</label>
+    </div>
+  </fieldset>
 
-  </form>
+  <!-- Date -->
+  <label for="date">Date of Installation *</label>
+  <input type="date" id="date" name="date" required>
+
+  <!-- Features -->
+  <fieldset>
+    <legend>Useful Features</legend>
+
+    <label><input type="checkbox" id="f1" name="features" value="durable"> Durable</label>
+    <label><input type="checkbox" id="f2" name="features" value="easy"> Easy to Use</label>
+    <label><input type="checkbox" id="f3" name="features" value="affordable"> Affordable</label>
+    <label><input type="checkbox" id="f4" name="features" value="design"> Nice Design</label>
+  </fieldset>
+
+  <!-- Review -->
+  <label for="review">Written Review</label>
+  <textarea id="review" name="review" rows="4"></textarea>
+
+  <!-- Name -->
+  <label for="username">Your Name</label>
+  <input type="text" id="username" name="username">
+
+  <!-- Submit -->
+  <input type="submit" value="Submit Review">
+
+</form>
 </main>
 
 <footer>
   <p>&copy; 2026 | Product Review | Rapheal Akwasi Agyapong</p>
 </footer>
 
-<script src="scripts/form.js"></script>
 </body>
 </html>

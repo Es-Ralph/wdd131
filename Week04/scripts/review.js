@@ -5,6 +5,7 @@ if (!count) {
 }
 
 count++;
+
 localStorage.setItem("reviewCount", count);
 
 document.getElementById("counter").textContent = count;
