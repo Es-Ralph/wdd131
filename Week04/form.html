@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit your review for the IoT-based energy monitoring system for SMEs."> 
+  <meta name="author" content="Rapheal Akwasi Agyapong">
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+<header>
+  <h1>Product Review Form</h1>
+</header>
+
+<main>
+  <form method="get" action="review.html">
+
+    <!-- Product Name -->
+    <label for="product">Product Name *</label>
+    <select id="product" name="product" required>
+      <option value="" disabled selected>Select a Product ...</option>
+    </select>
+
+    <!-- Rating -->
+    <fieldset>
+      <legend>Overall Rating *</legend>
+      <label><input type="radio" name="rating" value="1" required> ☆</label>
+      <label><input type="radio" name="rating" value="2"> ☆☆</label>
+      <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+      <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+      <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+    </fieldset>
+
+    <!-- Date -->
+    <label for="date">Date of Installation *</label>
+    <input type="date" id="date" name="date" required>
+
+    <!-- Features -->
+    <fieldset>
+      <legend>Useful Features</legend>
+      <label><input type="checkbox" name="features" value="durable"> Durable</label>
+      <label><input type="checkbox" name="features" value="easy"> Easy to Use</label>
+      <label><input type="checkbox" name="features" value="affordable"> Affordable</label>
+      <label><input type="checkbox" name="features" value="design"> Nice Design</label>
+    </fieldset>
+
+    <!-- Review -->
+    <label for="review">Written Review</label>
+    <textarea id="review" name="review"></textarea>
+
+    <!-- Username -->
+    <label for="username">Your Name</label>
+    <input type="text" id="username" name="username">
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Review">
+
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 | Product Review | Rapheal Akwasi Agyapong</p>
+</footer>
+
+<script src="scripts/form.js"></script>
+</body>
+</html>
