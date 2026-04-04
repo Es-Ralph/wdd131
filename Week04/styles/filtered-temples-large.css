@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    max-width: 1000px;
+  }
+}
