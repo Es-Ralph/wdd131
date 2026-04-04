@@ -45,16 +45,26 @@ main {
   padding: 1rem;
 }
 
-/* Grid */
+/* Gallery Grid */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
+figure {
+  margin: 0;
+}
+
 img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
+}
+
+figcaption {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
 }
 
 /* Footer */
@@ -63,3 +73,4 @@ footer {
   padding: 1rem;
   background: #eee;
 }
+
