@@ -76,9 +76,9 @@ function displayTemples(filteredTemples) {
     const figure = document.createElement("figure");
 
     figure.innerHTML = `
-      <img src="${temple.}" alt="${temple.name}">
+      <img src="${temple.imageUrl}" alt="${temple.templeName}">
       <figcaption>
-        <strong>${temple.name}</strong><br>
+        <strong>${temple.templeName}</strong><br>
         Location: ${temple.location}<br>
         Dedicated: ${temple.dedicated}<br>
         Size: ${temple.area} sq ft
