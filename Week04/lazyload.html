@@ -1,0 +1,26 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to implement lazy loading for images to improve page performance.">
+    <meta name="author" content="Rapheal Akwasi Agyapong">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+    <title>Lazy Load Images</title>
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Images Example</h1>
+    </header>
+    <main>
+        <p>Scroll down to see the images load as they come into view.</p>
+
+        <img src="images/placeholder.jfif" data-src="image1.jpg" alt="Image 1" class="lazy"  loading="lazy">
+        <img src="images/placeholder1.jfif" data-src="image2.jpg" alt="Image 2" class="lazy" loading="lazy">
+        <img src="images/placeholder2.jfif" data-src="image3.jpg" alt="Image 3" class="lazy" loading="lazy">
+        <img src="images/placeholder3.jfif" data-src="image4.jpg" alt="Image 4" class="lazy" loading="lazy">
+        <img src="images/placeholder4.jfif" data-src="image5.jpg" alt="Image 5" class="lazy" loading="lazy">
+    </main>
+</body>
+</html>

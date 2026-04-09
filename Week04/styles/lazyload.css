@@ -1,0 +1,23 @@
+/* Center everything */
+main {
+    text-align: center;
+}
+
+/* Make images stack vertically and centered */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+
+    /* Start hidden (black fade effect) */
+    opacity: 0;
+    filter: brightness(0);
+    transition: opacity 1s ease, filter 1s ease;
+}
+
+/* When image loads */
+img.loaded {
+    opacity: 1;
+    filter: brightness(1);
+}
